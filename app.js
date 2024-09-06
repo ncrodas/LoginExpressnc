@@ -6,11 +6,13 @@ const mysql = require('mysql2/promise');
 const cors = require('cors')
 var session = require('express-session')
 var md5 = require('md5');
+const bcrypt = require ('bcrypt');
 const login = require('./login');
 const registro = require('./registro');
 const { obtenerUsuarios, eliminarUsuario } = require('./usuarios');
 const validar = require('./validar');
 const saltRounds = 10;
+mysql://root:fUrotlYmgurvckhrTnKlGcIxluLZhGXK@junction.proxy.rlwy.net:11253/railway
 
 
 //variables de entorno
